@@ -1,0 +1,71 @@
+    @media (max-width: 1500px) {
+        .eye-container{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            z-index: 1;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #masque{
+            width:1500px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            z-index: 12;
+            position: relative;
+          }
+
+        .eye-1{
+          display: flex;
+          position: absolute;
+          justify-content: center;
+          transform: translate(-50%, -50%); /* Centre l'élément */
+          transform-origin: center center;  /* Transformation autour du centre */
+          top: 24%;
+          left: auto;
+          transform: translateX(-90px);
+          height: 30%;
+          width: 170px;
+          z-index: 0;
+        }
+
+        .eye-2{
+          display: flex;
+          position: absolute;
+          justify-content: center;
+          transform: translate(-50%, -50%); /* Centre l'élément */
+          transform-origin: center center;  /* Transformation autour du centre */
+          top: 36%;
+          left: auto;
+          transform: translateX(100px);
+          height: 35%;
+          width: 170px;
+          z-index: 0;
+        }
+
+        .eye-3{
+          position: absolute;
+          display: flex;
+          transform: translate(-50%, -50%); /* Centre l'élément */
+          transform-origin: center;  /* Transformation autour du centre */
+          justify-content: center;
+          top: 62%;
+          left: auto;
+          transform: translateX(-60px);
+          height: 25%;
+          width: 220px;
+          z-index: 0;
+        }
+
+
+    }
+
+    @media (max-width: 1000px) and (min-width :800px){
+    /*apparence différente pour une page comprise entre 800px et 1000px*/
+    }
+    
+    @media (min-width :1800px){
+    /*apparence différente pour une page supérieure à 1800px*/
+    }

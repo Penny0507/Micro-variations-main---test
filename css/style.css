@@ -1,0 +1,41 @@
+body{
+  height: 300vh; 
+}
+
+main{
+  position : fixed;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* ne pas toucher aux éléments ci-dessus. On travail c'est ce qui permet d'avoir une page que l'on peut 
+"scroller" mais qui visuellement ne bouge pas. */
+.eye-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#masque{
+  width:100%;
+  height: 100%;
+  z-index: 12;
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  width: 200px; /* Ajuste selon la taille de tes SVG */
+  height: 200px;
+}
+
+.eye-1 { top: 24%; left: 38%; width: 12%; height: 27%;}
+.eye-2 { top: 36%; left: 52%; width: 12%; height: 35%;}
+.eye-3 { top: 61%; left: 38%; width: 15%; height: 24%;}
+
+.pupil {
+  position: absolute;
+  top: 50%; /* Centre la pupille par défaut */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
